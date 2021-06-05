@@ -127,8 +127,8 @@ USE_TZ = True
 # managing media
 
 STATIC_URL = '/static/'
-heroku config:set DISABLE_COLLECTSTATIC=1
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 django_heroku.settings(locals())
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
